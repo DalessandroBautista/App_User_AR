@@ -12,7 +12,6 @@ public class Conexion {
 		try {
 			
 			miConexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/arburgers","root","1003");
-			
 
 		}catch(Exception e) {
 			System.out.println("error en Conexion");

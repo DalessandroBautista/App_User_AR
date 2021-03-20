@@ -17,7 +17,8 @@ public class setPedidoBD {
 			sentencia.setTimestamp(1, new Timestamp(System.currentTimeMillis()));
 			sentencia.setInt(2, totalBD);
 			sentencia.setInt(3, envioBD);
-			sentencia.executeUpdate();		
+			sentencia.executeUpdate();	
+			accesoBD.close();
 		}catch(Exception ex){
 			System.out.println("Fallo la suba del pedido a la BD");
 			ex.printStackTrace();
